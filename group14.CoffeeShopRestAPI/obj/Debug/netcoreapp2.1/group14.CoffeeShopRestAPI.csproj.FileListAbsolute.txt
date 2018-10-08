@@ -1,0 +1,14 @@
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\bin\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.deps.json
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\bin\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.runtimeconfig.json
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\bin\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.runtimeconfig.dev.json
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\bin\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.dll
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\bin\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.pdb
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\obj\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.csprojAssemblyReference.cache
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\obj\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.csproj.CoreCompileInputs.cache
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\obj\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.RazorAssemblyInfo.cache
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\obj\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.RazorAssemblyInfo.cs
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\obj\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.AssemblyInfoInputs.cache
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\obj\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.AssemblyInfo.cs
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\obj\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.RazorTargetAssemblyInfo.cache
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\obj\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.dll
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\obj\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.pdb

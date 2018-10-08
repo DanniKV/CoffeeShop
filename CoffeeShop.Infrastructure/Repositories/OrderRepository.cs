@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoffeeShop.Infrastructure.Repositories
 {
-    class OrderRepository
+    public class OrderRepository
     {
     }
 }

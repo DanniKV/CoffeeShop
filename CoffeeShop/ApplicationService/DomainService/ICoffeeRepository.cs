@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoffeeShop.Core.ApplicationService.DomainService
 {
-    class ICoffeeRepository
+    public class ICoffeeRepository
     {
     }
 }

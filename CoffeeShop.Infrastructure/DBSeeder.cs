@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoffeeShop.Infrastructure
 {
-    class DBSeeder
+    public class DBSeeder
     {
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoffeeShop.Infrastructure
 {
-    class CoffeeShopContext
+    public class CoffeeShopContext
     {
     }
 }

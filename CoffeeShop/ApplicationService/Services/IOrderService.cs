@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoffeeShop.Core.ApplicationService.Services
 {
-    class IOrderService
+    public class IOrderService
     {
     }
 }
