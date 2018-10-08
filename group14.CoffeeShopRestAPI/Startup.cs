@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using CoffeeShop.Infrastructure.Data.Repositories;
+using CoffeeShop.Core.Entities;
 
 namespace group14.CoffeeShopRestAPI
 {
@@ -39,8 +41,8 @@ namespace group14.CoffeeShopRestAPI
             {
                 app.UseHsts();
             }
-
-            app.UseHttpsRedirection();
+            //Use later
+            //app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

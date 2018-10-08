@@ -12,3 +12,7 @@ C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\obj\Debug\netco
 C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\obj\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.RazorTargetAssemblyInfo.cache
 C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\obj\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.dll
 C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\obj\Debug\netcoreapp2.1\group14.CoffeeShopRestAPI.pdb
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\bin\Debug\netcoreapp2.1\CoffeeShop.Core.dll
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\bin\Debug\netcoreapp2.1\CoffeeShop.Core.Entities.dll
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\bin\Debug\netcoreapp2.1\CoffeeShop.Infrastructure.Data.dll
+C:\Users\danni\source\repos\CoffeeShop\group14.CoffeeShopRestAPI\bin\Debug\netcoreapp2.1\CoffeeShop.Core.pdb

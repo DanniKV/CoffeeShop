@@ -4,7 +4,14 @@ using System.Text;
 
 namespace CoffeeShop.Core.Entities
 {
-    class Coffee
+    public class Coffee
     {
+        public int Id { get; set; }
+        public String CoffeeName { get; set; }
+
+
+
+
+        //Relations
     }
 }

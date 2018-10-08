@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using CoffeeShop.Core.DomainService;
+using CoffeeShop.Core.ApplicationService.DomainService;
+//using CoffeeShop.Core.DomainService;
 using CoffeeShop.Core.Entities;
 
 namespace CoffeeShop.Core.ApplicationService.Impl
@@ -19,7 +20,7 @@ namespace CoffeeShop.Core.ApplicationService.Impl
         {
             var coff = new Coffee()
             {
-                Name = coffeeName
+                CoffeeName = coffeeName
             };
             return coff;
         }
@@ -42,16 +43,16 @@ namespace CoffeeShop.Core.ApplicationService.Impl
         public List<Coffee> GetAllByCoffeeName(string name)
         {
             var list = _coffeeRepo.ReadAll();
-            var queryContinued = list.Where(coff => coff.Name.Equals(name));
-            queryContinued.OrderBy(coffee => coffee.Name);
+            var queryContinued = list.Where(coff => coff.CoffeeName.Equals(name));
+            queryContinued.OrderBy(coffee => coffee.CoffeeName);
             //Not executed anything yet
             return queryContinued.ToList();
         }
 
         public Coffee UpdateCoffee(Coffee coffeeUpdate)
         {
-            var coffee = FindCoffeeById(coffeeUpdate.CoffeeID);
-            coffee.Name = coffeeUpdate.Name;
+            var coffee = FindCoffeeById(coffeeUpdate.Id);
+            coffee.CoffeeName = coffeeUpdate.CoffeeName;
             return coffee;
         }
 

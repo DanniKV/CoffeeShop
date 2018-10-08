@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoffeeShop.Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
