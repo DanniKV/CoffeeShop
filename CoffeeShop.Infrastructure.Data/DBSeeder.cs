@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using CoffeeShop.Core.Entities;
 
 namespace CoffeeShop.Infrastructure.Data.Repositories
 {
@@ -19,6 +20,14 @@ namespace CoffeeShop.Infrastructure.Data.Repositories
             //Seeds the Data into the DB - stacks with each startup
             ctx.Database.EnsureCreated();
 
+
+            var coff1 = ctx.Coffee.Add(new Coffee)
+            {
+                CoffeeName = "",
+
+            }
+            //CoffeeEntities
+            
         }
     }
 }

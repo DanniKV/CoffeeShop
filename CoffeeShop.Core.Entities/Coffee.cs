@@ -10,7 +10,8 @@ namespace CoffeeShop.Core.Entities
         public String CoffeeName { get; set; }
 
 
-
+        //public double CoffeePrice { get; set; }
+        //public int CoffeeStrength { get; set; }
 
         //Relations
     }
