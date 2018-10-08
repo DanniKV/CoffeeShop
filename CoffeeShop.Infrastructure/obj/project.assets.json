@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danni\\source\\repos\\CoffeeShop\\CoffeeShop\\CoffeeShop.Core.csproj",
-      "projectName": "CoffeeShop.Core",
-      "projectPath": "C:\\Users\\danni\\source\\repos\\CoffeeShop\\CoffeeShop\\CoffeeShop.Core.csproj",
+      "projectUniqueName": "C:\\Users\\danni\\source\\repos\\CoffeeShop\\CoffeeShop.Infrastructure\\CoffeeShop.Infrastructure.csproj",
+      "projectName": "CoffeeShop.Infrastructure",
+      "projectPath": "C:\\Users\\danni\\source\\repos\\CoffeeShop\\CoffeeShop.Infrastructure\\CoffeeShop.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\danni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danni\\source\\repos\\CoffeeShop\\CoffeeShop\\obj\\",
+      "outputPath": "C:\\Users\\danni\\source\\repos\\CoffeeShop\\CoffeeShop.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

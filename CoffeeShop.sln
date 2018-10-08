@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShop", "CoffeeShop\CoffeeShop.csproj", "{9402443A-5646-4908-BAE4-352D2447FD8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeShop.Core", "CoffeeShop\CoffeeShop.Core.csproj", "{9402443A-5646-4908-BAE4-352D2447FD8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{EEB7F208-A195-4098-A414-EF4EF0C8881F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{96025334-CE6C-4923-A206-7FBD4F866B72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{22F67993-275D-4111-9D59-A6C69323D87F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShop.Infrastructure", "CoffeeShop.Infrastructure\CoffeeShop.Infrastructure.csproj", "{5F4535C2-5421-49B4-B0CB-985A4230AC9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "group14.CoffeeShopRestAPI", "group14.CoffeeShopRestAPI\group14.CoffeeShopRestAPI.csproj", "{0FC7884A-38AC-47D8-A778-768873641B01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +25,22 @@ Global
 		{9402443A-5646-4908-BAE4-352D2447FD8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9402443A-5646-4908-BAE4-352D2447FD8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9402443A-5646-4908-BAE4-352D2447FD8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F4535C2-5421-49B4-B0CB-985A4230AC9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4535C2-5421-49B4-B0CB-985A4230AC9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4535C2-5421-49B4-B0CB-985A4230AC9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4535C2-5421-49B4-B0CB-985A4230AC9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FC7884A-38AC-47D8-A778-768873641B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC7884A-38AC-47D8-A778-768873641B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FC7884A-38AC-47D8-A778-768873641B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FC7884A-38AC-47D8-A778-768873641B01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9402443A-5646-4908-BAE4-352D2447FD8F} = {EEB7F208-A195-4098-A414-EF4EF0C8881F}
+		{5F4535C2-5421-49B4-B0CB-985A4230AC9F} = {96025334-CE6C-4923-A206-7FBD4F866B72}
+		{0FC7884A-38AC-47D8-A778-768873641B01} = {22F67993-275D-4111-9D59-A6C69323D87F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A01A350-3843-4BFB-9F32-0D63032720E6}
