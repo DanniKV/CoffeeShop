@@ -4829,7 +4829,11 @@
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "CoffeeShop.Core": "1.0.0",
-          "CoffeeShop.Core.Entities": "1.0.0"
+          "CoffeeShop.Core.Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.4",
+          "Microsoft.EntityFrameworkCore.Sqlite": "2.1.4",
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": "2.1.4",
+          "Microsoft.EntityFrameworkCore.Sqlite.Design": "1.1.6"
         },
         "compile": {
           "bin/placeholder/CoffeeShop.Infrastructure.Data.dll": {}
