@@ -6,5 +6,6 @@ namespace CoffeeShop.Infrastructure
 {
     public class DBSeeder
     {
+
     }
 }
