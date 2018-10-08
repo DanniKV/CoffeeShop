@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CoffeeShop.Infrastructure.Repositories
+namespace CoffeeShop.Core.Entities
 {
-    public class OrderRepository
+    class Coffee
     {
     }
 }

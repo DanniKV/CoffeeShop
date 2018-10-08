@@ -207,6 +207,29 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "CoffeeShop.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "CoffeeShop.Core.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CoffeeShop.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoffeeShop.Core.dll": {}
+        }
+      },
+      "CoffeeShop.Core.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/CoffeeShop.Core.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoffeeShop.Core.Entities.dll": {}
+        }
       }
     }
   },
@@ -673,31 +696,42 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "CoffeeShop.Core/1.0.0": {
+      "type": "project",
+      "path": "../CoffeeShop/CoffeeShop.Core.csproj",
+      "msbuildProject": "../CoffeeShop/CoffeeShop.Core.csproj"
+    },
+    "CoffeeShop.Core.Entities/1.0.0": {
+      "type": "project",
+      "path": "../CoffeeShop.Core.Entities/CoffeeShop.Core.Entities.csproj",
+      "msbuildProject": "../CoffeeShop.Core.Entities/CoffeeShop.Core.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "CoffeeShop.Core >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\danni\\.nuget\\packages\\": {},
+    "C:\\Users\\tizz3\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danni\\source\\repos\\CoffeeShop\\CoffeeShop.Infrastructure\\CoffeeShop.Infrastructure.csproj",
-      "projectName": "CoffeeShop.Infrastructure",
-      "projectPath": "C:\\Users\\danni\\source\\repos\\CoffeeShop\\CoffeeShop.Infrastructure\\CoffeeShop.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\danni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danni\\source\\repos\\CoffeeShop\\CoffeeShop.Infrastructure\\obj\\",
+      "projectUniqueName": "C:\\Users\\tizz3\\Documents\\GitHub\\CoffeeShop\\CoffeeShop.Infrastructure\\CoffeeShop.Infrastructure.Data.csproj",
+      "projectName": "CoffeeShop.Infrastructure.Data",
+      "projectPath": "C:\\Users\\tizz3\\Documents\\GitHub\\CoffeeShop\\CoffeeShop.Infrastructure\\CoffeeShop.Infrastructure.Data.csproj",
+      "packagesPath": "C:\\Users\\tizz3\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tizz3\\Documents\\GitHub\\CoffeeShop\\CoffeeShop.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\danni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tizz3\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -709,7 +743,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\tizz3\\Documents\\GitHub\\CoffeeShop\\CoffeeShop\\CoffeeShop.Core.csproj": {
+              "projectPath": "C:\\Users\\tizz3\\Documents\\GitHub\\CoffeeShop\\CoffeeShop\\CoffeeShop.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

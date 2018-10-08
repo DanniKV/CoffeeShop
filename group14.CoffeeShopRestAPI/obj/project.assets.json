@@ -11500,23 +11500,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\danni\\.nuget\\packages\\": {},
+    "C:\\Users\\tizz3\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danni\\source\\repos\\CoffeeShop\\group14.CoffeeShopRestAPI\\group14.CoffeeShopRestAPI.csproj",
+      "projectUniqueName": "C:\\Users\\tizz3\\Documents\\GitHub\\CoffeeShop\\group14.CoffeeShopRestAPI\\group14.CoffeeShopRestAPI.csproj",
       "projectName": "group14.CoffeeShopRestAPI",
-      "projectPath": "C:\\Users\\danni\\source\\repos\\CoffeeShop\\group14.CoffeeShopRestAPI\\group14.CoffeeShopRestAPI.csproj",
-      "packagesPath": "C:\\Users\\danni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danni\\source\\repos\\CoffeeShop\\group14.CoffeeShopRestAPI\\obj\\",
+      "projectPath": "C:\\Users\\tizz3\\Documents\\GitHub\\CoffeeShop\\group14.CoffeeShopRestAPI\\group14.CoffeeShopRestAPI.csproj",
+      "packagesPath": "C:\\Users\\tizz3\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tizz3\\Documents\\GitHub\\CoffeeShop\\group14.CoffeeShopRestAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\danni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tizz3\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
