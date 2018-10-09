@@ -47,7 +47,7 @@ namespace group14.CoffeeShopRestAPI
             if (_env.IsDevelopment())
             {
                 services.AddDbContext<CoffeeContext>(
-                opt => opt.UseSqlite("Data Source=CustomerApp.db"));
+                opt => opt.UseSqlite("Data Source=CoffeeShop.db"));
             }
             //For SQLite DB.. Needs actual lists and tables
             //ConnectionString fra Azure (Online)

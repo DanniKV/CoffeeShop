@@ -25,6 +25,10 @@ namespace CoffeeShop.Infrastructure.Data.Repositories
             {
                 CoffeeName = "wutwut",
             }).Entity;
+            var coff2 = ctx.Coffees.Add(new Coffee()
+            {
+                CoffeeName = "Scheize"
+            });
 
             ctx.SaveChanges();
         }

@@ -1,0 +1,12 @@
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\bin\Release\netcoreapp2.1\CoffeeShop.Core.deps.json
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\bin\Release\netcoreapp2.1\CoffeeShop.Core.dll
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\bin\Release\netcoreapp2.1\CoffeeShop.Core.pdb
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\bin\Release\netcoreapp2.1\CoffeeShop.Core.Entities.dll
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\bin\Release\netcoreapp2.1\CoffeeShop.Core.Entities.pdb
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\obj\Release\netcoreapp2.1\CoffeeShop.Core.csprojAssemblyReference.cache
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\obj\Release\netcoreapp2.1\CoffeeShop.Core.csproj.CoreCompileInputs.cache
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\obj\Release\netcoreapp2.1\CoffeeShop.Core.AssemblyInfoInputs.cache
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\obj\Release\netcoreapp2.1\CoffeeShop.Core.AssemblyInfo.cs
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\obj\Release\netcoreapp2.1\CoffeeShop.Core.csproj.CopyComplete
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\obj\Release\netcoreapp2.1\CoffeeShop.Core.dll
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\obj\Release\netcoreapp2.1\CoffeeShop.Core.pdb
