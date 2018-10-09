@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using CoffeeShop.Core.ApplicationService.DomainService;
-//using CoffeeShop.Core.DomainService;
 using CoffeeShop.Core.Entities;
+using CoffeeShop.Core;
 
 namespace CoffeeShop.Core.ApplicationService.Impl
 {

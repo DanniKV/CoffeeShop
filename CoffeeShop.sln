@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "group14.CoffeeShopRestAPI",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeShop.Core.Entities", "CoffeeShop.Core.Entities\CoffeeShop.Core.Entities.csproj", "{1D47F106-CBEC-430A-8F2C-AE9197E705F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShop.Infrastructure.Data", "CoffeeShop.Infrastructure.Data\CoffeeShop.Infrastructure.Data.csproj", "{12B6477B-EDD6-4F49-BDAD-7B9B467C3396}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeShop.Infrastructure.Data", "CoffeeShop.Infrastructure.Data\CoffeeShop.Infrastructure.Data.csproj", "{12B6477B-EDD6-4F49-BDAD-7B9B467C3396}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

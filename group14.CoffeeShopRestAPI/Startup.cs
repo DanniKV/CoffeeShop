@@ -17,6 +17,8 @@ using Microsoft.EntityFrameworkCore;
 using CoffeeShop.Core.ApplicationService.DomainService;
 using CoffeeShop.Core.ApplicationService;
 using Newtonsoft.Json;
+using CoffeeShop.Core;
+using CoffeeShop.Core.ApplicationService.Impl;
 
 namespace group14.CoffeeShopRestAPI
 {
@@ -59,7 +61,7 @@ namespace group14.CoffeeShopRestAPI
             //Copied from Program 
             services.AddScoped<ICoffeeRepository, CoffeeRepository>();
 
-            services.AddScoped<ICoffeeService, ICoffeeService>();
+            services.AddScoped<ICoffeeService, CoffeeService>();
 
             //For Ignoring Loop References
             services.AddMvc().AddJsonOptions(Options => {

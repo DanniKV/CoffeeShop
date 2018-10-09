@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CoffeeShop.Core.ApplicationService;
 using Microsoft.AspNetCore.Mvc;
 using CoffeeShop.Core.Entities;
+using CoffeeShop.Core;
 
 namespace group14.CoffeeShopRestAPI.Controllers
 {

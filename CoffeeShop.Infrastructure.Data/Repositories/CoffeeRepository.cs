@@ -32,7 +32,7 @@ namespace CoffeeShop.Infrastructure.Data.Repositories
 
         public IEnumerable<Coffee> ReadAll()
         {
-            throw new NotImplementedException();
+            return _ctx.Coffees;
         }
 
         public Coffee ReadyById(int id)
