@@ -20,14 +20,13 @@ namespace CoffeeShop.Infrastructure.Data.Repositories
             //Seeds the Data into the DB - stacks with each startup
             ctx.Database.EnsureCreated();
 
-
-            var coff1 = ctx.Coffee.Add(new Coffee)
+            //Coffee Entities
+            var coff1 = ctx.Coffees.Add(new Coffee()
             {
-                CoffeeName = "",
+                CoffeeName = "wutwut",
+            }).Entity;
 
-            }
-            //CoffeeEntities
-            
+            ctx.SaveChanges();
         }
     }
 }

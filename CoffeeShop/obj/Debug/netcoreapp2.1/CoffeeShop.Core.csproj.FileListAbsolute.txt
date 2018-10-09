@@ -7,3 +7,6 @@ C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\obj\Debug\netcoreapp2.1\Coffee
 C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\obj\Debug\netcoreapp2.1\CoffeeShop.Core.AssemblyInfo.cs
 C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\obj\Debug\netcoreapp2.1\CoffeeShop.Core.dll
 C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\obj\Debug\netcoreapp2.1\CoffeeShop.Core.pdb
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\bin\Debug\netcoreapp2.1\CoffeeShop.Core.Entities.dll
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\bin\Debug\netcoreapp2.1\CoffeeShop.Core.Entities.pdb
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop\obj\Debug\netcoreapp2.1\CoffeeShop.Core.csproj.CopyComplete

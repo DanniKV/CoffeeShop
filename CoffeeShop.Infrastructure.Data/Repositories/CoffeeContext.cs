@@ -15,13 +15,13 @@ namespace CoffeeShop.Infrastructure.Data.Repositories
         {
 
         }
-        //Fluint API Model-Builder
+        //Fluint API Model-Builder-- DB Table Relations (one to many) and so on
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
 
         }
-        public DbSet<Coffee> Customers { get; set; }
+        public DbSet<Coffee> Coffees { get; set; }
     }
     
 }

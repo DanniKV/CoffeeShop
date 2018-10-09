@@ -1,0 +1,9 @@
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop.Core.Entities\bin\Debug\netstandard2.0\CoffeeShop.Core.Entities.deps.json
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop.Core.Entities\bin\Debug\netstandard2.0\CoffeeShop.Core.Entities.dll
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop.Core.Entities\bin\Debug\netstandard2.0\CoffeeShop.Core.Entities.pdb
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop.Core.Entities\obj\Debug\netstandard2.0\CoffeeShop.Core.Entities.csprojAssemblyReference.cache
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop.Core.Entities\obj\Debug\netstandard2.0\CoffeeShop.Core.Entities.csproj.CoreCompileInputs.cache
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop.Core.Entities\obj\Debug\netstandard2.0\CoffeeShop.Core.Entities.AssemblyInfoInputs.cache
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop.Core.Entities\obj\Debug\netstandard2.0\CoffeeShop.Core.Entities.AssemblyInfo.cs
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop.Core.Entities\obj\Debug\netstandard2.0\CoffeeShop.Core.Entities.dll
+C:\Users\danni\source\repos\CoffeeShop\CoffeeShop.Core.Entities\obj\Debug\netstandard2.0\CoffeeShop.Core.Entities.pdb

@@ -22,11 +22,6 @@ namespace group14.CoffeeShopRestAPI
 {
     public class Startup
     {
-        /* For offline Database
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }*/
 
         public IConfiguration _conf { get; }
 
@@ -42,14 +37,10 @@ namespace group14.CoffeeShopRestAPI
                 .AddEnvironmentVariables();
             _conf = builder.Build();
         }
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            /*
-            //In-Memory Database FakeSQL DB
-            services.AddDbContext<CustomerAppContext>(
-                opt => opt.UseInMemoryDatabase("FakeSQL-DB"));
-                */
 
             if (_env.IsDevelopment())
             {

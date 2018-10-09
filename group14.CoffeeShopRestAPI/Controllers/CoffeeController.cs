@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CoffeeShop.Core.ApplicationService;
 using Microsoft.AspNetCore.Mvc;
+using CoffeeShop.Core.Entities;
 
 namespace group14.CoffeeShopRestAPI.Controllers
 {
@@ -11,7 +12,6 @@ namespace group14.CoffeeShopRestAPI.Controllers
     [ApiController]
     public class CoffeeController : ControllerBase
     {
-
         private readonly ICoffeeService _CoffeeService;
 
         public CoffeeController(ICoffeeService coffeeService)
@@ -19,12 +19,11 @@ namespace group14.CoffeeShopRestAPI.Controllers
             _CoffeeService = coffeeService;
         }
 
-
         // GET api/Coffee
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<Coffee>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _CoffeeService.GetAllCoffees();
         }
 
         // GET api/Coffee/5

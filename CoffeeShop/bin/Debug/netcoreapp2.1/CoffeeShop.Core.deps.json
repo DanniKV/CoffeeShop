@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "CoffeeShop.Core/1.0.0": {
+        "dependencies": {
+          "CoffeeShop.Core.Entities": "1.0.0"
+        },
         "runtime": {
           "CoffeeShop.Core.dll": {}
+        }
+      },
+      "CoffeeShop.Core.Entities/1.0.0": {
+        "runtime": {
+          "CoffeeShop.Core.Entities.dll": {}
         }
       }
     }
   },
   "libraries": {
     "CoffeeShop.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CoffeeShop.Core.Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
