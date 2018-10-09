@@ -5,6 +5,7 @@ using System.Text;
 using CoffeeShop.Core.ApplicationService.DomainService;
 using CoffeeShop.Core.Entities;
 using CoffeeShop.Core;
+using System.IO;
 
 namespace CoffeeShop.Core.ApplicationService.Impl
 {
@@ -27,6 +28,10 @@ namespace CoffeeShop.Core.ApplicationService.Impl
 
         public Coffee CreateCoffee(Coffee coffee)
         {
+            if (string.IsNullOrEmpty(coffee.CoffeeName))
+            {
+                throw new InvalidDataException("You have to enter a name for the coffee");
+            }
             return _coffeeRepo.Create(coffee);
         }
 
