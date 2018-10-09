@@ -29,7 +29,9 @@ namespace CoffeeShop.Infrastructure.Data.Repositories
 
         public Coffee Delete(int id)
         {
-            throw new NotImplementedException();
+            var coffRemoved = _ctx.Remove(new Coffee { Id = id }).Entity;
+            _ctx.SaveChanges();
+            return coffRemoved;
         }
 
         public IEnumerable<Coffee> ReadAll()

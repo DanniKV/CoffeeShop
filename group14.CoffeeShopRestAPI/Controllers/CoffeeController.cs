@@ -49,8 +49,12 @@ namespace group14.CoffeeShopRestAPI.Controllers
 
         // DELETE api/Coffee/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult<Coffee> Delete(int id)
         {
+
+            var coff = _CoffeeService.DeleteCoffee(id);
+            return Ok($"Coffe with this id: {id} is succesfully deleted");
+
         }
     }
 }
