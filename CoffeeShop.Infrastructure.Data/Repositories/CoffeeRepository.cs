@@ -22,12 +22,16 @@ namespace CoffeeShop.Infrastructure.Data.Repositories
 
         public Coffee Create(Coffee coffee)
         {
-            throw new NotImplementedException();
+            var coff = _ctx.Coffees.Add(coffee).Entity;
+            _ctx.SaveChanges();
+            return coff;
         }
 
         public Coffee Delete(int id)
         {
-            throw new NotImplementedException();
+            var coffRemoved = _ctx.Remove(new Coffee { Id = id }).Entity;
+            _ctx.SaveChanges();
+            return coffRemoved;
         }
 
         public IEnumerable<Coffee> ReadAll()
