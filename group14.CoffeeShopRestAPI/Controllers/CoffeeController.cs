@@ -36,8 +36,9 @@ namespace group14.CoffeeShopRestAPI.Controllers
 
         // POST api/Coffee
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult<Coffee> Post([FromBody] Coffee coffee)
         {
+            return _CoffeeService.CreateCoffee(coffee);
         }
 
         // PUT api/Coffee/5
