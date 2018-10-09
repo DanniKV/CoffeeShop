@@ -22,7 +22,6 @@ namespace CoffeeShop.Core.ApplicationService.DomainService
         //Delete Data
         Coffee Delete(int id);
 
-        Coffee ReadyByIdIncludeOrders(int id);
     }
 
 }

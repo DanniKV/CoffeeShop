@@ -20,34 +20,38 @@ namespace group14.CoffeeShopRestAPI.Controllers
             _CoffeeService = coffeeService;
         }
 
-        // GET api/Coffee
+        // GET api/Coffee -- ReadAll!
         [HttpGet]
         public ActionResult<IEnumerable<Coffee>> Get()
         {
             return _CoffeeService.GetAllCoffees();
         }
 
-        // GET api/Coffee/5
+        // GET api/Coffee/5 -- Read By ID!
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<Coffee> Get(int id)
         {
-            return "value";
+            //exceptions!
+            return _CoffeeService.FindCoffeeById(id);
         }
 
-        // POST api/Coffee
+        // POST api/Coffee -- Create!
         [HttpPost]
         public ActionResult<Coffee> Post([FromBody] Coffee coffee)
         {
             return _CoffeeService.CreateCoffee(coffee);
         }
 
-        // PUT api/Coffee/5
+        // PUT api/Coffee/5 -- Update!
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public ActionResult<Coffee> Put(int id, [FromBody] Coffee coffee)
         {
+            //Exceptions!
+
+            return Ok(_CoffeeService.UpdateCoffee(coffee));
         }
 
-        // DELETE api/Coffee/5
+        // DELETE api/Coffee/5 -- Delete!
         [HttpDelete("{id}")]
         public ActionResult<Coffee> Delete(int id)
         {

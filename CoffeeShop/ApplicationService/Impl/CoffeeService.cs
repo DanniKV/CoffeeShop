@@ -51,9 +51,7 @@ namespace CoffeeShop.Core.ApplicationService.Impl
 
         public Coffee UpdateCoffee(Coffee coffeeUpdate)
         {
-            var coffee = FindCoffeeById(coffeeUpdate.Id);
-            coffee.CoffeeName = coffeeUpdate.CoffeeName;
-            return coffee;
+            return _coffeeRepo.Update(coffeeUpdate);
         }
 
         public Coffee DeleteCoffee(int id)

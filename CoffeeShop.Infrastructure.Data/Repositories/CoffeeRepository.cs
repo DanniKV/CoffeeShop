@@ -1,7 +1,9 @@
 ﻿using CoffeeShop.Core.ApplicationService.DomainService;
 using CoffeeShop.Core.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 
@@ -41,17 +43,15 @@ namespace CoffeeShop.Infrastructure.Data.Repositories
 
         public Coffee ReadyById(int id)
         {
-            throw new NotImplementedException();
+            return _ctx.Coffees.FirstOrDefault(c => c.Id == id);
         }
-
-        public Coffee ReadyByIdIncludeOrders(int id)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         public Coffee Update(Coffee coffeeUpdate)
         {
-            throw new NotImplementedException();
+            _ctx.Attach(coffeeUpdate).State = EntityState.Modified;
+            _ctx.SaveChanges();
+            return coffeeUpdate;
         }
     }
 }
