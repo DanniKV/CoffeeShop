@@ -18,13 +18,14 @@ namespace CoffeeShop.Core.ApplicationService.Impl
         }
 
         public Coffee NewCoffee(string coffeeName, 
-            double coffeePrice, int coffeeStrength)
+            double coffeePrice, int coffeeStrength, string coffeeDescription)
         {
             var coff = new Coffee()
             {
                 CoffeeName = coffeeName,
                 CoffeePrice = coffeePrice,
-                CoffeeStrength = coffeeStrength
+                CoffeeStrength = coffeeStrength,
+                CoffeeDescription = coffeeDescription
             };
             return coff;
         }

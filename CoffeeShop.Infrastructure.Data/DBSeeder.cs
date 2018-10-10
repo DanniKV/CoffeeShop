@@ -26,13 +26,15 @@ namespace CoffeeShop.Infrastructure.Data.Repositories
                 CoffeeName = "Wake up!",
                 CoffeePrice = 20,
                 CoffeeStrength = 5,
+                CoffeeDescription = "Det her er en meget meget meget meget meget go kaff' - køb den!"
             }).Entity;
 
             var coff2 = ctx.Coffees.Add(new Coffee()
             {
                 CoffeeName = "Weak stuff",
                 CoffeePrice = 15.00,
-                CoffeeStrength = 1
+                CoffeeStrength = 1,
+                CoffeeDescription = "Denne her kaff' lugter af tis, iz no good, la vær me at køb!"
             });
 
             ctx.SaveChanges();
