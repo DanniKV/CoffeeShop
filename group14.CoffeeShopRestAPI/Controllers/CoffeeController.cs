@@ -39,6 +39,7 @@ namespace group14.CoffeeShopRestAPI.Controllers
         [HttpPost]
         public ActionResult<Coffee> Post([FromBody] Coffee coffee)
         {
+            //Exceptions!
             return _CoffeeService.CreateCoffee(coffee);
         }
 
@@ -47,7 +48,6 @@ namespace group14.CoffeeShopRestAPI.Controllers
         public ActionResult<Coffee> Put(int id, [FromBody] Coffee coffee)
         {
             //Exceptions!
-
             return Ok(_CoffeeService.UpdateCoffee(coffee));
         }
 
@@ -55,7 +55,7 @@ namespace group14.CoffeeShopRestAPI.Controllers
         [HttpDelete("{id}")]
         public ActionResult<Coffee> Delete(int id)
         {
-
+            //Exceptions!
             var coff = _CoffeeService.DeleteCoffee(id);
             return Ok($"Coffe with this id: {id} is succesfully deleted");
 

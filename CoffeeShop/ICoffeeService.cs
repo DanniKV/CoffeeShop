@@ -8,7 +8,8 @@ namespace CoffeeShop.Core
     public interface ICoffeeService
     {
         //New Coffee
-        Coffee NewCoffee(string coffeeName);
+        Coffee NewCoffee(string coffeeName,
+            double coffeePrice, int coffeeStrength, string CoffeeDescription);
 
         //Create/Post
         Coffee CreateCoffee(Coffee coffee);

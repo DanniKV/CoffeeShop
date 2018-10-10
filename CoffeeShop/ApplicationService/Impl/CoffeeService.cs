@@ -5,6 +5,7 @@ using System.Text;
 using CoffeeShop.Core.ApplicationService.DomainService;
 using CoffeeShop.Core.Entities;
 using CoffeeShop.Core;
+using System.IO;
 
 namespace CoffeeShop.Core.ApplicationService.Impl
 {
@@ -16,17 +17,25 @@ namespace CoffeeShop.Core.ApplicationService.Impl
             _coffeeRepo = coffeeRepository;
         }
 
-        public Coffee NewCoffee(string coffeeName)
+        public Coffee NewCoffee(string coffeeName, 
+            double coffeePrice, int coffeeStrength, string coffeeDescription)
         {
             var coff = new Coffee()
             {
-                CoffeeName = coffeeName
+                CoffeeName = coffeeName,
+                CoffeePrice = coffeePrice,
+                CoffeeStrength = coffeeStrength,
+                CoffeeDescription = coffeeDescription
             };
             return coff;
         }
 
         public Coffee CreateCoffee(Coffee coffee)
         {
+            if (string.IsNullOrEmpty(coffee.CoffeeName))
+            {
+                throw new InvalidDataException("You have to enter a name for the coffee");
+            }
             return _coffeeRepo.Create(coffee);
         }
 
