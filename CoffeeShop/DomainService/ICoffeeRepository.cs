@@ -14,7 +14,8 @@ namespace CoffeeShop.Core.ApplicationService.DomainService
 
         //Read Data
         Coffee ReadyById(int id);
-        IEnumerable<Coffee> ReadAll();
+        IEnumerable<Coffee> ReadAll(Filter filter = null);
+        int Count();
 
         //Update Data
         Coffee Update(Coffee coffeeUpdate);

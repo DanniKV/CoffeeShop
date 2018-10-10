@@ -22,9 +22,19 @@ namespace group14.CoffeeShopRestAPI.Controllers
 
         // GET api/Coffee -- ReadAll!
         [HttpGet]
-        public ActionResult<IEnumerable<Coffee>> Get()
+        public ActionResult<IEnumerable<Coffee>> Get([FromQuery]Filter filter)
         {
-            return _CoffeeService.GetAllCoffees();
+            try
+            {
+                return Ok(_CoffeeService.GetFilteredCoffee(filter));
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+            
+
+            //return _CoffeeService.GetAllCoffees();
         }
 
         // GET api/Coffee/5 -- Read By ID!
@@ -46,6 +56,7 @@ namespace group14.CoffeeShopRestAPI.Controllers
         {
             //Exceptions!
             //Mangler Exception for samme navn! 
+            
             if (string.IsNullOrEmpty(coffee.CoffeeName))
             {
                 return BadRequest("Coffee Name Required!");

@@ -49,6 +49,19 @@ namespace CoffeeShop.Core.ApplicationService.Impl
             return _coffeeRepo.ReadAll().ToList();
         }
 
+        public List<Coffee> GetFilteredCoffee(Filter filter)
+        {
+            if (filter.CurrentPage < 0 || filter.ItemsPerPage < 0)
+            {
+                throw new InvalidDataException("Current Page and Items Per Page must be 0 or higher!");
+            }
+            if ((filter.CurrentPage - 1 * filter.ItemsPerPage) >= _coffeeRepo.Count())
+            {
+                throw new InvalidDataException("CurrentPage is set too high!");
+            }
+            return _coffeeRepo.ReadAll(filter).ToList();
+        }
+
         public List<Coffee> GetAllByCoffeeName(string name)
         {
             var list = _coffeeRepo.ReadAll();
@@ -67,5 +80,7 @@ namespace CoffeeShop.Core.ApplicationService.Impl
         {
             return _coffeeRepo.Delete(id);
         }
+
+        
     }
 }
