@@ -48,7 +48,6 @@ namespace group14.CoffeeShopRestAPI.Controllers
         public ActionResult<Coffee> Put(int id, [FromBody] Coffee coffee)
         {
             //Exceptions!
-
             return Ok(_CoffeeService.UpdateCoffee(coffee));
         }
 

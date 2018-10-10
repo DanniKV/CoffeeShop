@@ -23,11 +23,16 @@ namespace CoffeeShop.Infrastructure.Data.Repositories
             //Coffee Entities
             var coff1 = ctx.Coffees.Add(new Coffee()
             {
-                CoffeeName = "wutwut",
+                CoffeeName = "Wake up!",
+                CoffeePrice = 20,
+                CoffeeStrength = 5,
             }).Entity;
+
             var coff2 = ctx.Coffees.Add(new Coffee()
             {
-                CoffeeName = "Scheize"
+                CoffeeName = "Weak stuff",
+                CoffeePrice = 15.00,
+                CoffeeStrength = 1
             });
 
             ctx.SaveChanges();

@@ -17,11 +17,14 @@ namespace CoffeeShop.Core.ApplicationService.Impl
             _coffeeRepo = coffeeRepository;
         }
 
-        public Coffee NewCoffee(string coffeeName)
+        public Coffee NewCoffee(string coffeeName, 
+            double coffeePrice, int coffeeStrength)
         {
             var coff = new Coffee()
             {
-                CoffeeName = coffeeName
+                CoffeeName = coffeeName,
+                CoffeePrice = coffeePrice,
+                CoffeeStrength = coffeeStrength
             };
             return coff;
         }
