@@ -45,6 +45,7 @@ namespace group14.CoffeeShopRestAPI.Controllers
         public ActionResult<Coffee> Post([FromBody] Coffee coffee)
         {
             //Exceptions!
+            //Mangler Exception for samme navn! 
             if (string.IsNullOrEmpty(coffee.CoffeeName))
             {
                 return BadRequest("Coffee Name Required!");

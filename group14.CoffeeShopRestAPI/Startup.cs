@@ -70,13 +70,13 @@ namespace group14.CoffeeShopRestAPI
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            /*
+            
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowSpecificOrigin",
                     builder => builder.WithOrigins("http://localhost:63342").AllowAnyHeader()
                         .AllowAnyMethod());
-            });*/
+            });
 
         }
 
@@ -105,7 +105,7 @@ namespace group14.CoffeeShopRestAPI
                 app.UseHsts();
             }
             // Shows UseCors with named policy.
-            //app.UseCors("AllowSpecificOrigin");
+            app.UseCors("AllowSpecificOrigin");
 
             //app.UseHttpsRedirection();
 
