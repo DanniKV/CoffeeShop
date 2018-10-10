@@ -25,7 +25,7 @@ namespace XUnitTestCoffee
             Assert.Equal("You have to enter a name for the coffee", ex.Message);
         }
 
-        public void CreateCoffeeWithMissingPriceThrowsException()
+        public void CreateCoffeeWithMissingDescriptionThrowsException()
         {
             var coffRepo = new Mock<ICoffeeRepository>();
             ICoffeeService service = new CoffeeService(coffRepo.Object);
@@ -35,7 +35,7 @@ namespace XUnitTestCoffee
             };
             Exception ex = Assert.Throws<InvalidDataException>(() =>
             service.CreateCoffee(coffee));
-            Assert.Equal("", ex.Message);
+            Assert.Equal("You need to insert a description!", ex.Message);
         }
     }
 }
