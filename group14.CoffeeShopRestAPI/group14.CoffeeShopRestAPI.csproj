@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>5423719e-b235-453c-9449-0fbbef0c6998</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,6 +11,17 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoffeeShop.Core.Entities\CoffeeShop.Core.Entities.csproj" />
+    <ProjectReference Include="..\CoffeeShop.Infrastructure.Data\CoffeeShop.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\CoffeeShop\CoffeeShop.Core.csproj" />
   </ItemGroup>
 
 </Project>
