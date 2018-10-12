@@ -9,10 +9,10 @@ namespace CoffeeShop.Core.Entities
         public int Id { get; set; }
         public String CoffeeName { get; set; }
 
-
         public double CoffeePrice { get; set; }
         public int CoffeeStrength { get; set; }
         public string CoffeeDescription { get; set; }
+        public string CoffeePicUrl { get; set; }
 
         //Relations
     }

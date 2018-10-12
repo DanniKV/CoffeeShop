@@ -26,7 +26,8 @@ namespace CoffeeShop.Infrastructure.Data.Repositories
                 CoffeeName = "Wake up!",
                 CoffeePrice = 20,
                 CoffeeStrength = 5,
-                CoffeeDescription = "Det her er en meget meget meget meget meget go kaff' - køb den!"
+                CoffeeDescription = "Det her er en meget meget meget meget meget go kaff' - køb den!",
+                CoffeePicUrl = "https://www.alun.dk/resources/images/Medium/Hvor%20sent%20er%20for%20sent%20for%20en%20kop%20kaffe.jpg"
             }).Entity;
 
             var coff2 = ctx.Coffees.Add(new Coffee()
@@ -34,7 +35,8 @@ namespace CoffeeShop.Infrastructure.Data.Repositories
                 CoffeeName = "Weak stuff",
                 CoffeePrice = 15.00,
                 CoffeeStrength = 1,
-                CoffeeDescription = "Denne her kaff' lugter af tis, iz no good, la vær me at køb!"
+                CoffeeDescription = "Denne her kaff' lugter af tis, iz no good, la vær me at køb!",
+                CoffeePicUrl = "https://www.alun.dk/resources/images/Medium/Hvor%20sent%20er%20for%20sent%20for%20en%20kop%20kaffe.jpg"
             });
 
             ctx.SaveChanges();
