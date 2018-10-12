@@ -9,7 +9,8 @@ namespace CoffeeShop.Core
     {
         //New Coffee
         Coffee NewCoffee(string coffeeName,
-            double coffeePrice, int coffeeStrength, string CoffeeDescription);
+            double coffeePrice, int coffeeStrength, string CoffeeDescription,
+            string CoffeePicUrl);
 
         //Create/Post
         Coffee CreateCoffee(Coffee coffee);

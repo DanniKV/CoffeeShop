@@ -32,9 +32,6 @@ namespace group14.CoffeeShopRestAPI.Controllers
             {
                 return BadRequest(e.Message);
             }
-            
-
-            //return _CoffeeService.GetAllCoffees();
         }
 
         // GET api/Coffee/5 -- Read By ID!
@@ -117,7 +114,7 @@ namespace group14.CoffeeShopRestAPI.Controllers
         [HttpDelete("{id}")]
         public ActionResult<Coffee> Delete(int id)
         {
-            //Exceptions!
+            //Exceptions! Exception does NOT run
             var coff = _CoffeeService.DeleteCoffee(id);
 
             if (coff == null)
