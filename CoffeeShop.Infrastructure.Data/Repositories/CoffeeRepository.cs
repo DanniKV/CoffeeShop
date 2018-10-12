@@ -18,9 +18,10 @@ namespace CoffeeShop.Infrastructure.Data.Repositories
             _ctx = ctx;
         }
 
-
-
-
+        public int Count()
+        {
+            return _ctx.Coffees.Count();
+        }
 
         public Coffee Create(Coffee coffee)
         {
@@ -36,9 +37,14 @@ namespace CoffeeShop.Infrastructure.Data.Repositories
             return coffRemoved;
         }
 
-        public IEnumerable<Coffee> ReadAll()
+        public IEnumerable<Coffee> ReadAll(Filter filter)
         {
-            return _ctx.Coffees;
+            if (filter == null)
+            {
+                return _ctx.Coffees;
+            }
+            return _ctx.Coffees.Skip((filter.CurrentPage - 1) * filter.ItemsPerPage)
+                .Take(filter.ItemsPerPage);
         }
 
         public Coffee ReadyById(int id)

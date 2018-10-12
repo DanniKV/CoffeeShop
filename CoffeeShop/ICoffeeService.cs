@@ -18,6 +18,7 @@ namespace CoffeeShop.Core
         Coffee FindCoffeeById(int id);
         List<Coffee> GetAllCoffees();
         List<Coffee> GetAllByCoffeeName(string name);
+        List<Coffee> GetFilteredCoffee(Filter filter);
 
         //Update/Put
         Coffee UpdateCoffee(Coffee coffeeUpdate);

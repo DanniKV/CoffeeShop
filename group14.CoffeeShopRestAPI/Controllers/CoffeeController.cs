@@ -22,9 +22,19 @@ namespace group14.CoffeeShopRestAPI.Controllers
 
         // GET api/Coffee -- ReadAll!
         [HttpGet]
-        public ActionResult<IEnumerable<Coffee>> Get()
+        public ActionResult<IEnumerable<Coffee>> Get([FromQuery]Filter filter)
         {
-            return _CoffeeService.GetAllCoffees();
+            try
+            {
+                return Ok(_CoffeeService.GetFilteredCoffee(filter));
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+            
+
+            //return _CoffeeService.GetAllCoffees();
         }
 
         // GET api/Coffee/5 -- Read By ID!
@@ -32,6 +42,11 @@ namespace group14.CoffeeShopRestAPI.Controllers
         public ActionResult<Coffee> Get(int id)
         {
             //exceptions!
+            if (id < 1)
+            {
+                return BadRequest("Id must be greater than 0!");
+            }
+            //Needs additional Exception for ID Match!
             return _CoffeeService.FindCoffeeById(id);
         }
 
@@ -40,6 +55,29 @@ namespace group14.CoffeeShopRestAPI.Controllers
         public ActionResult<Coffee> Post([FromBody] Coffee coffee)
         {
             //Exceptions!
+            //Mangler Exception for samme navn! 
+            
+            if (string.IsNullOrEmpty(coffee.CoffeeName))
+            {
+                return BadRequest("Coffee Name Required!");
+            }
+            if (double.IsNegative(coffee.CoffeePrice) || coffee.CoffeePrice < 1)
+            {
+                return BadRequest("Coffee needs a price above 1!");
+            }
+            if (coffee.CoffeeStrength < 0)
+            {
+                return BadRequest("The lowest strength is 0!");
+            }
+            if (coffee.CoffeeStrength > 5)
+            {
+                return BadRequest("The highest coffee strength is 5!");
+            }
+            if (string.IsNullOrEmpty(coffee.CoffeeDescription))
+            {
+                return BadRequest("You need to insert a description!");
+            }
+            
             return _CoffeeService.CreateCoffee(coffee);
         }
 
@@ -48,6 +86,30 @@ namespace group14.CoffeeShopRestAPI.Controllers
         public ActionResult<Coffee> Put(int id, [FromBody] Coffee coffee)
         {
             //Exceptions!
+            if (id < 1 || id != coffee.Id)
+            {
+                return BadRequest("The ID you are looking for does not exist!");
+            }
+            if (string.IsNullOrEmpty(coffee.CoffeeName))
+            {
+                return BadRequest("Coffee Name Required!");
+            }
+            if (double.IsNegative(coffee.CoffeePrice) || coffee.CoffeePrice < 1)
+            {
+                return BadRequest("Coffee needs a price above 1!");
+            }
+            if (coffee.CoffeeStrength < 0)
+            {
+                return BadRequest("The lowest strength is 0!");
+            }
+            if (coffee.CoffeeStrength > 5)
+            {
+                return BadRequest("The highest coffee strength is 5!");
+            }
+            if (string.IsNullOrEmpty(coffee.CoffeeDescription))
+            {
+                return BadRequest("You need to insert a description!");
+            }
             return Ok(_CoffeeService.UpdateCoffee(coffee));
         }
 
@@ -57,7 +119,14 @@ namespace group14.CoffeeShopRestAPI.Controllers
         {
             //Exceptions!
             var coff = _CoffeeService.DeleteCoffee(id);
-            return Ok($"Coffe with this id: {id} is succesfully deleted");
+
+            if (coff == null)
+            {
+                return BadRequest("Id Does not exist!");
+                //return StatusCode(404,"Could not find a coffee with that ID!" + id);
+            }
+            
+            return Ok($"Coffe with the id: {id} is succesfully deleted");
 
         }
     }
